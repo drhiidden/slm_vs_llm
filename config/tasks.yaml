@@ -1,0 +1,52 @@
+tasks:
+  exact_qa:
+    name: "Preguntas y Respuestas Exactas"
+    description: "Tareas de preguntas factuales que requieren respuestas precisas"
+    primary_metric: exact_match
+    secondary_metrics: [rouge_l]
+    examples: 5
+    
+  math:
+    name: "Cálculos Matemáticos"
+    description: "Problemas matemáticos simples que requieren cálculo paso a paso"
+    primary_metric: math_accuracy
+    secondary_metrics: [exact_match]
+    examples: 5
+    
+  json_toolcall:
+    name: "Generación de JSON Estructurado"
+    description: "Generación de respuestas en formato JSON válido según esquema"
+    primary_metric: schema_valid
+    secondary_metrics: [field_accuracy]
+    examples: 5
+    
+  classification:
+    name: "Clasificación de Texto"
+    description: "Clasificación binaria de intenciones o sentimientos"
+    primary_metric: accuracy
+    secondary_metrics: [f1_score]
+    examples: 5
+    
+  reason_short:
+    name: "Razonamiento Breve"
+    description: "Respuestas de razonamiento en 3-5 frases"
+    primary_metric: rouge_l
+    secondary_metrics: [length_control]
+    examples: 5
+
+task_sets:
+  core:
+    description: "Conjunto básico de tareas para evaluación rápida"
+    tasks: [exact_qa, math, classification]
+    
+  all:
+    description: "Todas las tareas disponibles"
+    tasks: [exact_qa, math, json_toolcall, classification, reason_short]
+    
+  slm_focused:
+    description: "Tareas donde los SLMs suelen tener buen rendimiento"
+    tasks: [exact_qa, classification, json_toolcall]
+    
+  llm_focused:
+    description: "Tareas que requieren razonamiento complejo"
+    tasks: [math, reason_short, json_toolcall]

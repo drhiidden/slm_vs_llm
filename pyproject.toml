@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slm-llm-bench"
+version = "0.1.0"
+description = "Benchmarking tool for comparing Small Language Models vs Large Language Models"
+authors = [{name = "SLM vs LLM Benchmark Team"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.65.0",
+    "rouge-score>=0.1.2",
+    "jsonschema>=4.17.0",
+    "httpx>=0.24.0",
+    "openai>=1.0.0",
+    "matplotlib>=3.7.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+]
+
+[project.scripts]
+slm-llm-bench = "bench.main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

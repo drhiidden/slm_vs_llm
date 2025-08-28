@@ -1,0 +1,25 @@
+{"task":"exact_qa","id":"qa_1","prompt":"¿Cuál es la capital de Francia?","gold":"París"}
+{"task":"exact_qa","id":"qa_2","prompt":"¿En qué año comenzó la Primera Guerra Mundial?","gold":"1914"}
+{"task":"exact_qa","id":"qa_3","prompt":"¿Cuál es el elemento químico con símbolo O?","gold":"Oxígeno"}
+{"task":"exact_qa","id":"qa_4","prompt":"¿Quién escribió 'Don Quijote'?","gold":"Miguel de Cervantes"}
+{"task":"exact_qa","id":"qa_5","prompt":"¿Cuál es el planeta más grande del sistema solar?","gold":"Júpiter"}
+{"task":"math","id":"m_1","prompt":"Calcula 2345 + 876. Devuelve solo el número.","gold":"3221"}
+{"task":"math","id":"m_2","prompt":"¿Cuánto es 15 × 23? Responde solo con el número.","gold":"345"}
+{"task":"math","id":"m_3","prompt":"Calcula 1000 - 347. Escribe solo el resultado.","gold":"653"}
+{"task":"math","id":"m_4","prompt":"¿Cuál es el resultado de 48 ÷ 6? Solo el número.","gold":"8"}
+{"task":"math","id":"m_5","prompt":"Calcula 7² + 3. Responde únicamente con el número.","gold":"52"}
+{"task":"json_toolcall","id":"jt_1","prompt":"Devuelve un JSON con {\"nombre\":string,\"edad\":int}. Nombre=Ana, Edad=28.","schema":{"type":"object","properties":{"nombre":{"type":"string"},"edad":{"type":"integer"}},"required":["nombre","edad"]},"gold":"{\"nombre\":\"Ana\",\"edad\":28}"}
+{"task":"json_toolcall","id":"jt_2","prompt":"Genera JSON: {\"ciudad\":string,\"pais\":string,\"poblacion\":int}. Ciudad=Madrid, País=España, Población=3223000.","schema":{"type":"object","properties":{"ciudad":{"type":"string"},"pais":{"type":"string"},"poblacion":{"type":"integer"}},"required":["ciudad","pais","poblacion"]},"gold":"{\"ciudad\":\"Madrid\",\"pais\":\"España\",\"poblacion\":3223000}"}
+{"task":"json_toolcall","id":"jt_3","prompt":"Crea JSON: {\"producto\":string,\"precio\":number,\"disponible\":boolean}. Producto=Laptop, Precio=999.99, Disponible=true.","schema":{"type":"object","properties":{"producto":{"type":"string"},"precio":{"type":"number"},"disponible":{"type":"boolean"}},"required":["producto","precio","disponible"]},"gold":"{\"producto\":\"Laptop\",\"precio\":999.99,\"disponible\":true}"}
+{"task":"json_toolcall","id":"jt_4","prompt":"Devuelve JSON: {\"temperatura\":number,\"unidad\":string}. Temperatura=25.5, Unidad=Celsius.","schema":{"type":"object","properties":{"temperatura":{"type":"number"},"unidad":{"type":"string"}},"required":["temperatura","unidad"]},"gold":"{\"temperatura\":25.5,\"unidad\":\"Celsius\"}"}
+{"task":"json_toolcall","id":"jt_5","prompt":"Genera JSON: {\"coordenadas\":{\"lat\":number,\"lon\":number}}. Lat=40.4168, Lon=-3.7038.","schema":{"type":"object","properties":{"coordenadas":{"type":"object","properties":{"lat":{"type":"number"},"lon":{"type":"number"}},"required":["lat","lon"]}},"required":["coordenadas"]},"gold":"{\"coordenadas\":{\"lat\":40.4168,\"lon\":-3.7038}}"}
+{"task":"classification","id":"c_1","prompt":"Texto: \"Me encantó el producto\". Etiqueta (pos/neg):","gold":"pos"}
+{"task":"classification","id":"c_2","prompt":"Texto: \"El servicio fue terrible\". Etiqueta (pos/neg):","gold":"neg"}
+{"task":"classification","id":"c_3","prompt":"Texto: \"Funciona perfectamente\". Etiqueta (pos/neg):","gold":"pos"}
+{"task":"classification","id":"c_4","prompt":"Texto: \"No lo recomiendo\". Etiqueta (pos/neg):","gold":"neg"}
+{"task":"classification","id":"c_5","prompt":"Texto: \"Excelente calidad\". Etiqueta (pos/neg):","gold":"pos"}
+{"task":"reason_short","id":"r_1","prompt":"Resume en 3 frases la ventaja de usar SLMs frente a LLMs.","key_points":["menor latencia","menor coste","suficiente para tareas repetitivas"]}
+{"task":"reason_short","id":"r_2","prompt":"Explica en 3 frases por qué es importante la privacidad en IA.","key_points":["protección de datos","confianza del usuario","cumplimiento legal"]}
+{"task":"reason_short","id":"r_3","prompt":"Describe en 3 frases el impacto del cambio climático.","key_points":["aumento de temperaturas","eventos extremos","biodiversidad"]}
+{"task":"reason_short","id":"r_4","prompt":"Resume en 3 frases las ventajas del trabajo remoto.","key_points":["flexibilidad horaria","ahorro en transporte","equilibrio vida-trabajo"]}
+{"task":"reason_short","id":"r_5","prompt":"Explica en 3 frases la importancia de la educación digital.","key_points":["competencia tecnológica","oportunidades laborales","participación ciudadana"]}
