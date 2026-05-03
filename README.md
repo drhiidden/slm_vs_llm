@@ -1,6 +1,15 @@
-# SLM vs LLM Benchmarking Tool
+![slm_vs_llm banner](docs/banner.png)
 
-Una herramienta completa para comparar modelos de lenguaje pequeños (SLM) vs modelos de lenguaje grandes (LLM) en tareas típicas de agentes. Mide **latencia**, **calidad** y **coste estimado** en distintos prompts y genera reportes reproducibles.
+# slm_vs_llm
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
+[![Status: stable](https://img.shields.io/badge/Status-stable-brightgreen.svg)](#)
+![visitors](https://komarev.com/ghpvc/?username=drhiidden&repo=slm_vs_llm&color=00ff88&style=flat-square)
+
+**Not every task needs GPT-4.**
+
+Herramienta completa para comparar modelos de lenguaje pequeños (SLM) vs modelos de lenguaje grandes (LLM) en tareas típicas de agentes. Mide **latencia**, **calidad** y **coste estimado** en distintos prompts y genera reportes reproducibles.
 
 ## 🚀 Características
 
@@ -286,3 +295,9 @@ Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
 ---
 
 **¡Happy benchmarking! 🚀**
+
+---
+
+## Metodología
+
+Desarrollado con [HCP (Human-Code-AI Protocol)](https://github.com/haletheia/human-code-ai-protocol) — protocolo git-native para Context Engineering.
