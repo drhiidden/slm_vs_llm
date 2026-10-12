@@ -6,7 +6,7 @@
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![views](https://komarev.com/ghpvc/?username=lab-slm-vs-llm&label=views&color=0e75b6)](https://github.com/drhiidden/slm_vs_llm)
+[![views](https://komarev.com/ghpvc/?username=drhiidden&repo=slm_vs_llm&label=views&color=0e75b6)](https://github.com/drhiidden/slm_vs_llm)
 
 **Qué es**: Framework Python para comparar modelos de lenguaje pequeños (SLMs, <10B params) vs grandes (LLMs, >10B params) en tareas reales de código y reasoning.
 
