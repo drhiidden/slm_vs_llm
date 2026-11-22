@@ -1,0 +1,7 @@
+.env
+.env.*
+.cursor/
+.procontext/
+SPRINT-*.md
+SESSION-*.md
+*-COMPLETADO.md
